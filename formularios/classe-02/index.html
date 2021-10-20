@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validação cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="input">
+        <h1>CADASTRO</h1>
+        <form>
+            <group>
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text" class="_nome" required>
+            </group>
+            <group>
+                <label for="email">Email:</label>
+                <input id="email" type="email" class="_email" required>
+            </group>
+            <group>
+                <label for="celular">Celular:</label>
+                <input id="celular" type="number" minlength="12" class="_celular" required>
+            </group>
+            <group>
+                <label for="senha">Senha:</label>
+                <input id="senha" type="password" minlength="8" class="_senha" required>
+            </group>
+            <group>
+                <label for="confSenha">Confirme sua senha:</label>
+                <input id="confSenha" type="password" minlength="8" class="_senha" required>
+            </group>
+            <group class="estado">
+                Estado:
+                <select required>
+                    <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                    <option value="Paraná">Paraná</option>
+                    <option value="Santa Catarina">Santa Catarina</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Rio de janeiro">Rio de janeiro</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Minas Gerais">Minas Gerais</option>
+                    <option value="Mato Grosso">Mato Grosso</option>
+                    <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                    <option value="Bahia">Bahia</option>
+                    <option value="Espirito Santo">Espirito Santo</option>
+                    <option value="Pernambuco">Pernambuco</option>
+                    <option value="Paraiba">Paraiba</option>
+                    <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                </select>
+            </group>
+
+            <button class="button" type="submit">Enviar</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

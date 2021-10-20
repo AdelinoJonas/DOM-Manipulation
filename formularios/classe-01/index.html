@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validação de e-mail e senha</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="modal">
+        <h1>Login</h1>
+        <div class="input">
+            <form target="_blank" method="GET">
+                <group>
+                    <label for="e_mail" class="label">E-mail:</label>
+                    <input id="e_mail" class="_input" type="email" required>
+                </group>
+                <group>
+                    <label for="senha" class="label">Senha:</label>
+                    <input id="senha" class="_input" type="password" minlength="6" required>
+                </group>
+                <a href="http://google.com" class="forgot">Esqueci a senha</a>
+                <button class="entrar" type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
